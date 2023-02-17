@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NOTEPAD</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src *  data: blob: filesystem: about: ws: wss: 'unsafe-inline' 'unsafe-eval' 'unsafe-dynamic'; 
+    script-src * data: blob: 'unsafe-inline' 'unsafe-eval'; 
+    connect-src * data: blob: 'unsafe-inline'; 
+    img-src * data: blob: 'unsafe-inline'; 
+    frame-src * data: blob: ; 
+    style-src * data: blob: 'unsafe-inline';
+    font-src * data: blob: 'unsafe-inline';"/>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="install.js"></script>
+    </head>
+    <body>
+        <div class="notes-site" id="notes-site">
+            <h2>Notepad</h2>
+            <ul class="list" id="list">
+            </ul>
+            <a id="newnote" href="newnote.html" class="button">+</a>
+            <a class="switch1" id="right">></a>
+        </div>
+        <div class="to-do-site" id="to-do-site">
+            <h2>To Do</h2>
+            <ul class="list" id="to-do-list">
+            </ul>
+            <a class="button" id="add-to-do">+</a>
+            <a class="switch2" id="left"><</a>
+        </div>
+        <script src="onload.js"></script>
+    </body>
+</html>

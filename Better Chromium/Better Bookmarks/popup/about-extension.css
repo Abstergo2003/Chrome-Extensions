@@ -1,0 +1,23 @@
+body {
+    font-family: 'Oxanium', cursive;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 500px;
+    background-color: #260C3C;
+    text-align: center;
+    color: #e5e5e5;
+}
+img {
+    width: 150px;
+}
+p {
+    padding: 20px;
+}
+a {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #e5e5e5;
+    -webkit-tap-highlight-color: none;
+}

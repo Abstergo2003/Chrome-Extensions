@@ -1,0 +1,122 @@
+body {
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    margin:0;
+    padding: 0;
+    background-color: #db9b04;
+    font-family: 'Oxanium', cursive;
+    overflow: hidden;
+    position: relative;
+}
+textarea {
+    width: 40vw;
+    height: 20vw;
+    color: #e5e5e5;
+    font-size: 16px;
+}
+.list {
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+.list li {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title {
+    height: 20px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border-style: none; 
+    border-color: Transparent; 
+    overflow: auto;
+    font-weight: 700;  
+}
+.note {
+    height: 360px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent; 
+    border-style: none; 
+    border-color: Transparent; 
+    overflow: auto;        
+}
+.button {
+    display: inline-block;
+    border-radius: 10px;
+    border-color: transparent;
+    width: 70px;
+    background-color: #cf8c06;
+    color: #e5e5e5;
+    text-decoration: none;
+    -webkit-tap-highlight-color: none;;
+}
+.button:hover {
+    background-color: #a87103;
+}
+h2 {
+    color: #e5e5e5;
+}
+.item {
+    color: #e5e5e5;
+    width: 100%;
+    border-radius: 10px;
+    text-decoration: none;
+    -webkit-tap-highlight-color: none;
+}
+.item:hover {
+    background-color: #a87103;
+}
+.notes-site {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+.to-do-site {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 400px;
+    z-index: 999;
+    background-color: #db9b04;
+    transition: all 0.3s ease-in-out;
+}
+.switch1 {
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    color: #e5e5e5;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: #db9b04;
+    width: 40px;
+    border-radius: 50%;
+}
+.switch1:hover {
+    background-color:#a87103
+}
+.switch2 {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    color: #e5e5e5;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: #db9b04;
+    width: 40px;
+    border-radius: 50%;
+}
+.switch2:hover {
+    background-color:#a87103
+}

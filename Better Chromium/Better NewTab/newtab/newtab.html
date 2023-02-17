@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="newtab.css" rel="stylesheet">
+        <meta http-equiv="Content-Security-Policy" content="
+        default-src *  data: blob: filesystem: about: ws: wss: 'unsafe-inline' 'unsafe-eval'; 
+        script-src * data: blob: 'self' 'unsafe-inline' 'unsafe-eval'; 
+        connect-src * data: blob: 'unsafe-inline'; 
+        img-src * data: blob: 'unsafe-inline'; 
+        frame-src * data: blob: ; 
+        style-src * data: blob: 'unsafe-inline';
+        font-src * data: blob: 'unsafe-inline';"/>
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;700&display=swap" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatibile" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>New Tab</title>
+        <link rel="icon" href="/icon.png">
+    </head>
+    <body>
+        <div class="clock-div">
+            <div id="clock_mode_switch">
+                <button id="button_clock_clock"><img src="clock_icons/clock.svg" style="height: 20px"></button>
+                <button id="button_clock_stoper"><img src="clock_icons/stoper.svg" style="height: 20px"></button>
+                <button id="button_clock_countdown"><img src="clock_icons/countdown.svg" style="height: 20px"></button>
+            </div>
+            <div id="clock_modes">
+                <div id="clock_clock">
+                    <span id="time" class="clock"></span><br>
+                    <span id="date" class="clock"></span>
+                </div>
+                <div id="clock_stoper">
+                    <a id="clock_stoper_seconds">00</a>:<a id="clock_stoper_miliseconds">00</a><br>
+                    <button id="clock_stoper_start" class="clock_stoper_operators">Start</button>
+                    <button id="clock_stoper_stop" class="clock_stoper_operators">Stop</button>
+                    <button id="clock_stoper_reset" class="clock_stoper_operators">Reset</button>
+                </div>
+                <div id="clock_countdown">
+                    <button id="clock_countdown_set_minutes_add" class="clock_countdown_operators_rotated">></button><button id="clock_countdown_set_seconds_add" class="clock_countdown_operators_rotated"><</button><br>
+                    <a id="clock_countdown_minutes_input" style="margin-left: 66px">00</a>:<a id="clock_countdown_seconds_input" style="margin-left: 0px">00</a><button id="clock_countdown_start" class="clock_countdown_operators">Start</button><br>
+                    <button id="clock_countdown_set_minutes_remove" class="clock_countdown_operators_rotated">></button><button id="clock_countdown_set_seconds_remove" class="clock_countdown_operators_rotated"><</button><button id="clock_countdown_reset" class="clock_countdown_operators">Reset</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="notepad-ext" id="notepad-ext">
+            <div class="notes-site" id="notes-site">
+                <a style="color :#e5e5e5; font-size: 30px; font-weight: 700;">Notepad<img id="notepad_trigger" src="weather_icons/arrows_circle_up.svg"></a>
+                <ul class="list" id="list">
+                </ul>
+                <a id="newnote" class="button">+</a>
+                <a class="switch1" id="right">></a>
+            </div>
+            <div class="to-do-site" id="to-do-site">
+                <a style="color :#e5e5e5; font-size: 30px; font-weight: 700;">To Do<img id="notepad_trigger" src="weather_icons/arrows_circle_up.svg"></a>
+                <ul class="list" id="to-do-list">
+                </ul>
+                <a class="button" id="add-to-do">+</a><br>
+                <a class="switch2" id="left"><</a>
+                <img src="favicons/trashcan.svg" class="trash" id="del_to_do">
+            </div>
+        </div>
+        <form method="GET" action="https://www.google.com/search" class="search_bar">
+            <input name="q" type="text" class="search_bar_text" placeholder="search in google">
+            <input type="submit" class="search_bar_input" value="">
+        </form>
+        <div class="app-center" id="app-center">
+                <div class="app">
+                    <a href="https://youtube.com"><img src="favicons/yt.png" class="favicon"></a><br>
+                    <a href="https://youtube.com">You Tube</a>
+                </div>
+                <div class="app">
+                    <a href="https://gmail.com"><img src="favicons/gmail.ico" class="favicon"></a><br>
+                    <a href="https://gmail.com">Gmail</a>
+                </div>
+                <div class="app">
+                    <a href="https://drive.google.com"><img src="favicons/drive.png" class="favicon"></a><br>
+                    <a href="https://drive.google.com">Google Drive</a>
+                </div>
+                <div class="app">
+                    <a href="https://google.com/maps"><img src="favicons/maps.png" class="favicon"></a><br>
+                    <a href="https://google.com/maps">Google Maps</a>
+                </div>
+
+                <div class="app">
+                    <a href="https://pp-group.com.pl"><img src="favicons/pp.png" class="favicon"></a><br>
+                    <a href="https://pp-group.com.pl">PP Group</a>
+                </div>
+                <div class="app">
+                    <a href="https://webd.pl"><img src="favicons/webd.ico" class="favicon"></a><br>
+                    <a href="https://webd.pl">WebD</a>
+                </div>
+                <div class="app">
+                    <a href="https://wn26.webd.pl:2083"><img src="data:image/x-icon;base64,AAABAAEAICAAAAEAIADSAgAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgGAAAAc3p69AAAAplJREFUWIXt1j2IHGUYB/DfOzdnjIKFkECIVWIKvUFsIkRExa9KJCLaWAgWJx4DilZWgpDDiI0wiViIoGATP1CCEDYHSeCwUBBkgiiKURQJFiLo4d0eOxYzC8nsO9m9XcXC+8MW+3z+9/l6l2383xH+iSBpElyTdoda26xsDqp/h0CVZ3vwKm7tMBngAs7h7eRYebG6hMtMBHbMBX89vfARHprQ5U8cwdFQlIOZCVR5di1+w/wWXT/EY6EoN5NZCODuKZLDwzgSMCuBe2fwfX6QZwtpWzqfBBtLC3txF/ZhxKbBGx0EfsTJS77vwmGjlZrD4mUzUOXZjVjGI65cnTXchB8iupdDUb7QinsQZ7GzZftdQj2JVZ49iC/w6JjksIo7OnS9tiA5Vn6GtyK2+1MY5NkhfGDygVrBAxH5WkPuMjR7/3UsUFLl2Q68s4XkA3ws3v9zoSjX28Kr5wL1xrTxa6ou+f6OZGvqPg9v1wZeaUjcELE/DVfNhWFSvy/enOIZ9eq1sTokEMNLWI79oirP8g6fXpVnh7GEvY1sV/OJ4f0UhyKKk6EoX4x5pEkgXv6L6OM99YqNw/c4kXSwG5nkIfpLCynuiahW1GWeJHkfT4aiXO9atz1XcD6I6yLyHu6bIPk6Hg9FeYZ63y9EjBarPDvQ8VJ1nd9V3D4m+RncForyxFCQ4hSeahlej88Hefauurdwaufr5z/F/ZHAX6nL+mZE18e36IWiHLkFocqzW9QXcNz1+wUHxJ/f10JRPjvGP4pk/vj5L3F8AtufdD+/p6dJDknzX+05fDLGtife/766t9MRgFCUffWTudwE3AqBlVCUf0xLYGTQqzzbhydwJ3Y34g318J1tmX+DPBTlz9MS2MY2/nP8DTGaqeTDf30rAAAAAElFTkSuQmCC" type="image/x-icon" /></a><br>
+                    <a href="https://wn26.webd.pl:2083">Cpanel</a>
+                </div>
+                <div class="app">
+                    <a href="https://poczta.pp-group.com.pl"><img src="favicons/pp.png" class="favicon"></a><br>
+                    <a href="https://poczta.pp-group.com.pl">Poczta PP</a>
+                </div>
+
+                <div class="app">
+                    <a href="https://cas.usos.pw.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.usos.pw.edu.pl%2Fkontroler.php%3F_action%3Dlogowaniecas%2Findex&locale=pl"><img src="favicons/usos.png" class="favicon"></a><br>
+                    <a href="https://pp-group.com.pl">USOS</a>
+                </div>
+                <div class="app">
+                    <a href="https://moodle.usos.pw.edu.pl/"><img src="favicons/moodle.ico" class="favicon"></a><br>
+                    <a href="https://moodle.usos.pw.edu.pl/">Moodle</a>
+                </div>
+                <div class="app">
+                    <a href="https://moodle.okno.pw.edu.pl/"><img src="favicons/okno.ico" class="favicon"></a><br>
+                    <a href="https://moodle.okno.pw.edu.pl/">Moodle Okno</a>
+                </div>
+                <div class="app">
+                    <a href="https://outlook.office.com/mail/"><img src="favicons/outlook.png" class="favicon"></a><br>
+                    <a href="https://outlook.office.com/mail/">USOS Mail</a>
+                </div>
+
+                <div class="app" >
+                    <a href="https://allegro.pl/"><img src="favicons/allegro.png" class="favicon"></a><br>
+                    <a href="https://moodle.usos.pw.edu.pl/">OLX</a>
+                </div>
+                <div class="app">
+                    <a href="https://www.olx.pl/"><img src="favicons/olx.ico" class="favicon"></a><br>
+                    <a href="https://pp-group.com.pl">Allegro</a>
+                </div>
+                <div class="app">
+                    <a href="https://www.morele.net/"><img src="favicons/morele.ico" class="favicon"></a><br>
+                    <a href="https://wn26.webd.pl:2083">Morele.net</a>
+                </div>
+                <div class="app">
+                    <a href="https://aliexpress.com/"><img src="favicons/aliexpress.ico" class="favicon"></a><br>
+                    <a href="https://poczta.pp-group.com.pl">Aliexpress</a>
+                </div>
+        </div>
+        <div id="add-app">
+            <button id="close" class="close">x</button><br>
+            <textarea placeholder="your app name" id="app_name"></textarea>
+            <textarea placeholder="your app link" id="app_link"></textarea><br>
+            <button id="app_save">OK</button>
+        </div>
+        <div id="app_list">
+            <button class="close" id="close-delete">X</button><br>
+        </div>
+        <div id="weather_app">
+            <a style="font-size: 30px; font-weight: 700;">Weather<img id="weather_trigger" src="weather_icons/arrows_circle_up.svg"></a>
+            <div id="weather_main">
+                <image id="weather_icon"></image><br>
+                <a id="weather_temp"></a><br>
+                <a id="weather_desc"></a>
+                <img id="loc_icon" src="weather_icons/basic_geolocalize-05.svg"><a id="weather_loc"></a><br>
+            </div>
+            <div id="weather_feels_like">
+                <img id="feels_icon" src="weather_icons/thermometer-svgrepo-com.svg">
+            </div>
+            <div id="weather_humidity">
+                <img id="hum_icon" src="weather_icons/weather_drop.svg">
+            </div>
+        </div>
+        <script src="scripts/app_center.js"></script>
+        <script src="scripts/clock.js"></script>
+        <script src="scripts/notes.js"></script>
+        <script src="scripts/to_do.js"></script>
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/localization.js"></script>
+        <script src="onload.js"></script>
+    </body>
+</html>

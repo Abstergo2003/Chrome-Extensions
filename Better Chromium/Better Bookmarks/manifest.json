@@ -1,0 +1,29 @@
+{
+    "name": "Better Chromium 2/3",
+    "version": "1.0.0",
+    "description": "updates chrome bookmarks",
+    "manifest_version": 3,
+    "author": "Abstergo2003",
+    "action":{
+        "default_popup": "popup/about-extension.html",
+        "default_title": "About Extension",
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "storage",
+        "bookmarks"
+    ],
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "storage": ["sync", "local"],
+    "chrome_url_overrides" : {
+        "bookmarks": "bookmarks/bookmarks.html"
+      },
+    "background" : {
+        "service_worker" : "install.js"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Notepad",
+    "version": "1.0.0",
+    "description": "notepad",
+    "manifest_version": 3,
+    "author": "Asbtergo2003",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Notepad",
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "storage": ["sync", "local"],
+    "background": {
+        "service_worker": "install.js"
+    },
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    }
+}

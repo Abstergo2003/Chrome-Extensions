@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="about-extension.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatibile" content="IE-edge" />
+  </head>
+  <body>
+    <img src="icon.png"><br>
+    <h1>Better Chromium</h1>
+    <a>Created by: Abstergo</a>
+    <p>This extension copletely overrides existing tabs for "new tab", "bookmarks" and "history". Most of the features are located in the "new tab", including clock, notepad (there is also existing extension especialy for that function), app center or weather.</p>
+    <button id="weather_api_window_trigger">Set weather API key</button><br>
+    <a href="https://openweathermap.org/api" target="_blank">To get you weather API key register on this site (basic API key is free)</a><br>
+    <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Linea Iconset is distributed under CCBY<br> license, and all work is atributted to Dario Fernando</a>
+    <div id="weather_api_window">
+      <textarea id="weather_api_textarea" placeholder="your api key here"></textarea><br>
+      <button id="weather_api_set">Set</button>
+    </div>
+    <script src="weather_api.js"></script>
+  </body>
+</html>

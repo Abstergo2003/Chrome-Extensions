@@ -1,0 +1,548 @@
+body {
+    font-family: 'Oxanium', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #260C3C;
+    position: relative;
+    width: max-content;
+    height:max-content;
+    overflow: hidden;
+}
+.clock-div {
+    margin-left: 20px;
+    margin-top : 50px;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+    width: 400px;
+    height: 150px;
+    text-align: center;
+    font-size: 40px;
+    color: #e5e5e5;
+}
+.notepad-ext {
+    position: absolute;
+    top: 410px;
+    left: 20px;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    padding: 0;
+    background-color: #db9b04;
+    font-family: 'Oxanium', cursive;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+}
+textarea {
+    width: 40vw;
+    height: 20vw;
+    color: #e5e5e5;
+    font-size: 16px;
+}
+.list {
+    list-style: none;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+.list li {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title {
+    height: 20px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border-style: none; 
+    border-color: Transparent; 
+    overflow: auto;
+    font-weight: 700;
+    text-align: center; 
+}
+.note {
+    height: 350px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent; 
+    border-style: none; 
+    border-color: Transparent; 
+    overflow: auto;        
+}
+.button {
+    display: inline-block;
+    border-radius: 10px;
+    border-color: transparent;
+    width: 70px;
+    background-color: #cf8c06;
+    color: #e5e5e5;
+    text-decoration: none;
+    -webkit-tap-highlight-color: none;;
+}
+.button:hover {
+    background-color: #a87103;
+}
+h2 {
+    color: #e5e5e5;
+}
+.item {
+    color: #e5e5e5;
+    width: 100%;
+    border-radius: 10px;
+    text-decoration: none;
+    -webkit-tap-highlight-color: none;
+}
+.item:hover {
+    background-color: #a87103;
+}
+.notes-site {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+.to-do-site {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 400px;
+    z-index: 999;
+    background-color: #db9b04;
+    transition: all 0.3s ease-in-out;
+    overflow-y: auto;
+}
+.switch1 {
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    color: #e5e5e5;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: #db9b04;
+    width: 40px;
+    border-radius: 50%;
+}
+.switch1:hover {
+    background-color:#a87103
+}
+.switch2 {
+    position: absolute;
+    top: 200px;
+    left: 10px;
+    color: #e5e5e5;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: #db9b04;
+    width: 40px;
+    border-radius: 50%;
+}
+.switch2:hover {
+    background-color:#a87103
+}
+.app-center {
+    position: relative;
+    left: 20px;
+    top: 250px;
+    position: absolute;
+    width: 1800px;
+    height: 300px;
+    overflow-y: auto;
+}
+.favicon {
+    width: 30px;
+    color: #e5e5e5
+}
+.app {
+    text-align: center;
+    display: inline-block;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    width: 80px;
+}
+.app a {
+    color: #e5e5e5;
+    display: block;
+    color:#e5e5e5;
+    text-decoration: none;
+}
+#add-app {
+    width: 300px;
+    height: 150px;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 1200px;
+    left: 350px;
+    text-align: center;
+}
+#app_name {
+    margin-top: 15px;
+    width: 250px;
+    height: 25px;
+    background-color: transparent;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    border-radius: 5px;
+}
+#app_link {
+    margin: 0;
+    width: 250px;
+    height: 25px;
+    background-color: transparent;
+    border-radius: 5px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+}
+#app-save {
+    margin-top: 10px;
+    height: 25px;
+    background-color: transparent;
+    color: #e5e5e5;
+    border-color: #e5e5e5;
+    border-radius: 5px;
+}
+.close {
+    margin: 0;
+    padding: 0;
+    float: right;
+    background-color: transparent;
+    color: black;
+    border: #888 solid;
+    border-width: 1px;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.close:hover {
+    box-shadow: -1px  -1px #888;
+}
+#app_list {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 1200px;
+    left: 350px;
+    text-align: center;
+    color: black;
+    width: 300px;
+}
+.delete-b {
+    font-size: 20px;
+    margin-top: 10px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #888;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 5px;
+}
+.delete-b:hover {
+    box-shadow: -1px  -1px #888;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #888;
+    border-radius: 10px;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: black;
+    border-radius: 10px;
+}
+.search_bar {
+    position: absolute;
+    top: 100px;
+    left: 560px;
+}
+.search_bar_text {
+    width: 700px;
+    height: 40px;
+    font-size: 30px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #e5e5e5;
+    
+}
+.search_bar_text:focus {
+    outline: none;
+}
+.search_bar_input {
+    position: absolute;
+    top: 0px;
+    left: 710px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    background-color: transparent;
+    background-image: url("favicons/search.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    filter: invert(100%) sepia(1%) saturate(6743%) hue-rotate(227deg) brightness(119%) contrast(80%);
+}
+.to-do-items {
+    color: #e5e5e5;
+    transition: all 0.3s ease-in-out;
+}
+.trash {
+    float: right;
+    filter: invert(100%) sepia(1%) saturate(6743%) hue-rotate(227deg) brightness(119%) contrast(80%);
+}
+.to-do-textarea {
+    margin-top: 20px;
+    width: 380px;
+    height: 20px;
+    background-color: transparent;
+    color: #e5e5e5;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #e5e5e5;
+}
+.to-do-button {
+    padding: 0;
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: #e5e5e5;
+    border-color: #e5e5e5;
+    border-radius: 5px;
+}
+#weather_app {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 635px;
+    left: 1100px;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+#weather_main {
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    margin-top: 50px;
+}
+#weather_temp {
+    font-size: 50px;
+    font-weight: 700;
+}
+#weather_desc {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+#weather_loc {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-left: 0;
+}
+#weather_feels_like {
+    display: block;
+    padding-top: 8px;
+    width: 198px;
+    height: 42px;
+    font-size: 30px;
+    float: left;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom: none;
+    border-color: #888;
+}
+#weather_humidity {
+    display: block;
+    padding-top: 8px;
+    width: 198px;
+    height: 42px;
+    font-size: 30px;
+    float: left;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom: none;
+    border-color: #888;
+}
+#weather_icon {
+    filter: invert(65%) sepia(71%) saturate(2300%) hue-rotate(163deg) brightness(91%) contrast(90%);
+    margin-bottom: 20px;
+}
+#loc_icon{
+    width: 30px;
+    float: left;
+    margin-left: 100px;
+    margin-right: -100px;
+}
+#hum_icon {
+    width: 30px;
+    filter: invert(65%) sepia(71%) saturate(2300%) hue-rotate(163deg) brightness(91%) contrast(90%);
+}
+#feels_icon {
+    width: 30px;
+    filter: invert(65%) sepia(71%) saturate(2300%) hue-rotate(163deg) brightness(91%) contrast(90%);
+}
+#weather_trigger {
+    width: 30px;
+    float: right;
+}
+#notepad_trigger {
+    margin: 0;
+    width: 30px;
+    float: right;
+    filter: invert(100%) sepia(0%) saturate(373%) hue-rotate(339deg) brightness(111%) contrast(80%);
+}
+#clock_mode_switch {
+    height: 25px;
+    width: 400px;
+    background-color: transparent;
+    margin-bottom: 5px;
+    padding: 0;
+    
+}
+#button_clock_clock {
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 133px;
+    height: 25px;
+    background-color: transparent;
+    border-color: #888;
+    box-shadow: none;
+    filter: invert(100%) sepia(0%) saturate(373%) hue-rotate(339deg) brightness(111%) contrast(80%);
+}
+#button_clock_stoper {
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 133px;
+    height: 25px;
+    background-color: transparent;
+    border-color: #888;
+    box-shadow: none;
+    filter: invert(100%) sepia(0%) saturate(373%) hue-rotate(339deg) brightness(111%) contrast(80%);
+}
+#button_clock_countdown {
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 133px;
+    height: 25px;
+    background-color: transparent;
+    border-color: #888;
+    box-shadow: none;
+    filter: invert(100%) sepia(0%) saturate(373%) hue-rotate(339deg) brightness(111%) contrast(80%);
+}
+#clock_modes {
+    overflow: hidden;
+    height: 150px;
+    position: relative;
+}
+#clock_clock {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 400px;
+    height: 150px;
+    transition: all 0.3s ease-in-out;
+}
+#clock_stoper {
+    position: absolute;
+    top: 0;
+    left: 400px;
+    display: block;
+    width: 400px;
+    height: 150px;
+    transition: all 0.3s ease-in-out;
+}
+#clock_countdown {
+    position: absolute;
+    top: 0;
+    left: 800px;
+    display: block;
+    width: 400px;
+    height: 150px;
+    transition: all 0.3s ease-in-out;
+}
+.clock_stoper_operators {
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    height: 25px;
+    background-color: transparent;
+    border-color: #888;
+    box-shadow: none;
+    filter: invert(100%) sepia(0%) saturate(373%) hue-rotate(339deg) brightness(111%) contrast(80%);
+}
+.clock_countdown_operators {
+    padding: 0;
+    margin: 0;
+    width: 80px;
+    height: 25px;
+    background-color: transparent;
+    border-color: #888;
+    box-shadow: none;
+    filter: invert(100%) sepia(0%) saturate(373%) hue-rotate(339deg) brightness(111%) contrast(80%);
+}
+#clock_countdown_start {
+    display: block;
+    float: right;
+    margin-right: 10px;
+}
+#clock_countdown_reset {
+    display: block;
+    float: right;
+    margin-right: 10px;
+}
+#clock_countdown_set_minutes_remove {
+    margin-left: 66px;
+}
+#clock_countdown_set_minutes_add {
+    margin-left: -26px;
+}
+.clock_countdown_operators_rotated {
+    transform: rotate(90deg);
+    padding: 0;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border-color: #888;
+    box-shadow: none;
+    filter: invert(100%) sepia(0%) saturate(373%) hue-rotate(339deg) brightness(111%) contrast(80%);
+}

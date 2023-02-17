@@ -1,0 +1,26 @@
+{
+    "name": "Better Chromium 3/3",
+    "version": "1.0.0",
+    "description": "updates chrome history",
+    "manifest_version": 3,
+    "author": "Abstergo2003",
+    "action":{
+        "default_popup": "popup/about-extension.html",
+        "default_title": "About Extension",
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "storage",
+        "history"
+    ],
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "storage": ["sync", "local"],
+    "chrome_url_overrides" : {
+        "history": "history/history.html"
+      }
+}

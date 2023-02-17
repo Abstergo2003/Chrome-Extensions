@@ -1,0 +1,56 @@
+body {
+    font-family: 'Oxanium', cursive;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 500px;
+    background-color: #260C3C;
+    text-align: center;
+    color: #e5e5e5;
+    overflow: hidden;
+}
+img {
+    width: 150px;
+    background-color: #260C3C;
+}
+p {
+    padding: 20px;
+    padding-bottom: 10px;
+    background-color: #260C3C;
+}
+a {
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #e5e5e5;
+    -webkit-tap-highlight-color: none;
+}
+button {
+    background-color: #888;
+    color: #e5e5e5;
+}
+#weather_api_window {
+    position: absolute;
+    top: 550px;
+    width: 300px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#weather_api_textarea {
+    margin-top: 20px;
+    height: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 300px;
+    background-color: transparent;
+    color: #e5e5e5;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 2px;
+    border-color: #e5e5e5
+}
+#weather_api_set {
+    height: 20px;
+    margin: 0;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="history.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;700&display=swap" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatibile" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>History</title>
+        <link rel="icon" href="icon.png">
+    </head>
+    <body>
+        <div id="history">
+            <h2 style="color: #e5e5e5; font-size: 40px; margin-left: 40px; margin-top: 40px;">History</h2>
+            <ul id="history_list"></ul>
+        </div>
+        <div id="functions">
+            <input type="text" placeholder="search through history" id="history_search_input">
+            <div class="style_list" >
+                <h5 style="color: #260C3C; margin-top: 10px; margin-bottom: 10px;">Most viewed</h5>
+                <ul id="most_viewed_list"></ul>
+            </div>
+            <button id="history_delete_checked">Delete</button><button id="history_open_checked">Open</button>
+        </div>
+        <script src="scripts/history_operations.js"></script>
+        <script src="scripts/eventlistener.js"></script>
+    </body> 
+</html>

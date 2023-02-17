@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NOTEPAD</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <script src="reset.js"></script>
+    <script src="save.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src *  data: blob: filesystem: about: ws: wss: 'unsafe-inline' 'unsafe-eval' 'unsafe-dynamic'; 
+    script-src * data: blob: 'unsafe-inline' 'unsafe-eval'; 
+    connect-src * data: blob: 'unsafe-inline'; 
+    img-src * data: blob: 'unsafe-inline'; 
+    frame-src * data: blob: ; 
+    style-src * data: blob: 'unsafe-inline';
+    font-src * data: blob: 'unsafe-inline';"/>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <textarea placeholder="your title here" id="title-textbox" class="title"></textarea><br>
+        <textarea placeholder="your text here" id="textbox" class="note"></textarea><br>
+        <a href="#" id="reset" class="button">Reset</a>
+        <a href="index.html" id="save" class="button">Save</a>
+        <a href="index.html" class="button">Back</a>
+        <script src="eventlistener.js"></script>
+    </body>
+</html>

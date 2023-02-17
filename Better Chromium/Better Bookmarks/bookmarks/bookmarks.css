@@ -1,0 +1,117 @@
+body {
+    font-family: 'Oxanium', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #260C3C;
+    position: relative;
+    width: max-content;
+    height:max-content;
+    overflow-x: hidden;
+}
+#bookmark-tree {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: #e5e5e5;
+    font-size: 20px;
+}
+.fa-folder {
+    content: url("icons/basic_folder.svg");
+    filter: invert(99%) sepia(1%) saturate(3654%) hue-rotate(216deg) brightness(122%) contrast(80%);
+    color: #e5e5e5;
+}
+.fa-link {
+    content: url("icons/basic_webpage.svg");
+    filter: invert(99%) sepia(1%) saturate(3654%) hue-rotate(216deg) brightness(122%) contrast(80%);
+    color: #e5e5e5;
+}
+#functions {
+    position: fixed;
+    top: 20px;
+    left: 1200px;
+    width: 260px;
+    height: 640px;
+    background-color: #e5e5e5;
+    border-radius: 20px;
+    padding: 20px;
+}
+#bookmarks_filter_input {
+    width: 250px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #260C3C;
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}
+.jstree-search {
+    color: black !important;
+}
+.jstree-clicked {
+    background-color: blueviolet !important;
+}
+#bookmarks_delete_div {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    overflow-y: auto;
+}
+#bookmarks_delete {
+    background-color: #260C3C;
+    border-color: #260C3C;
+    color: #e5e5e5;
+    border-radius: 5px;
+}
+#bookmarks_to_delete {
+    text-align: left;
+    text-decoration: line-through;
+    max-height: 440px;
+    overflow-y: auto;
+}
+#options {
+    width: 100px;
+    height: 40px;
+    background-color: #e5e5e5;
+    color: #260C3C;
+    position: absolute;
+    top: 0px;
+    left: -200px;
+    text-align: center;
+    border-radius: 10px;
+}
+#options_goto {
+    width: 100px;
+    height: 20px;
+    background-color: transparent;
+    color: #260C3C;
+    border-color: transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#options_delete {
+    width: 100px;
+    height: 20px;
+    background-color: transparent;
+    color: #260C3C;
+    border-color: transparent;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#options_goto:hover {
+    border-color: #260C3C;
+    border-width: 0.5px;
+}
+#options_delete:hover {
+    border-color: #260C3C;
+    border-width: 0.5px;
+}
+#list_clear {
+    background-color: #260C3C;
+    border-color: #260C3C;
+    color: #e5e5e5;
+    border-radius: 5px;
+    margin-left: 10px;
+}

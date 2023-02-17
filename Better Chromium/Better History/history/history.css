@@ -1,0 +1,134 @@
+body {
+    font-family: 'Oxanium', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #260C3C;
+    position: relative;
+    width: max-content;
+    height:max-content;
+}
+#functions {
+    position: fixed;
+    top: 20px;
+    left: 1200px;
+    width: 260px;
+    height: 650px;
+    background-color: rgb(229, 229, 229);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+#history_search_input {
+    width: 250px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #260C3C;
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="password"], textarea, select { 
+    outline: none;
+}
+#history_list {
+    color: #e5e5e5;
+    font-size: 20px;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #e5e5e5;
+    -webkit-tap-highlight-color: none;
+}
+#most_viewed_list {
+    color: #260C3C;
+    font-size: 20px;
+    text-align: left;
+    list-style: none;
+}
+#most_viewed_list a {
+    color: #260C3C;
+}
+img {
+    width: 20px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 10px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #e5e5e5;
+    border-radius: 10px;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #260C3C;
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #260C3C;
+    border-radius: 10px;
+}
+.style_list {
+    overflow-y: auto; 
+    height: 530px;
+}
+button {
+    margin-top: 20px;
+    margin-left: 10px;
+    color: #e5e5e5;
+    background-color: #260C3C;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+.checkbox {
+    position: relative;
+    border-radius: 20px;
+    border-color: #e5e5e5;
+    border-width: 20px;
+    z-index: 999;
+    top: -10px;
+    width: 0;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+.checkbox::before {
+    content:'';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 2px;
+    border-color: #e5e5e5;
+    border-width: 20px;
+    z-index: 999;
+}
+.checkbox:checked::before {
+    background-color: transparent;
+    z-index: 999;
+}
+.checkbox::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background-color:  #e5e5e5;
+    border-radius: 25px;
+    transition: 0.25s ease-in-out;
+    border: 2px solid  #e5e5e5;
+    box-sizing: border-box;
+    z-index: 999;
+}
+.checkbox:checked::after {
+    border: 2px solid  #e5e5e5;
+    z-index: 999;
+    background-color: var(--color_purp);
+}
