@@ -1,0 +1,24 @@
+{
+    "name": "Paint",
+    "version": "1.0.0",
+    "description": "helps you plan your project goals, budgeting, an time spent working on project",
+    "manifest_version": 3,
+    "author": "Abstergo2003",
+    "action":{
+        "default_popup": "popup.html",
+        "default_title": "Time on this site"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "declarativeNetRequest", 
+        "declarativeNetRequestWithHostAccess", 
+        "declarativeNetRequestFeedback",
+        "scripting",
+        "activeTab"
+    ],
+    "storage": ["sync", "local"],
+    "background": {
+        "service_worker": "install.js"
+    }
+}

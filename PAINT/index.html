@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatibile" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;700&display=swap" rel="stylesheet">
+        <title>PaintNote</title>
+    </head>
+    <body>
+        <div class="options">
+            <input type="radio" name="color" id="black" checked class="colors">
+            <input type="radio" name="color" id="red" class="colors">
+            <input type="radio" name="color" id="green" class="colors">
+            <input type="radio" name="color" id="blue" class="colors">
+            <input type="radio" name="color" id="yellow" class="colors">
+            <form id="customColorForm" onsubmit="return false">
+                <input type="text" id="customColor" placeholder="#444">
+                <input type="submit" style="position: absolute; left: -9999999px">
+            </form>
+            <a style="padding-top: 20px;">Stroke Width</a><br>
+            <input type="range"  min="1" max="50" id="stroke" value="5"><br>
+            <ul style="width: 100%; text-align: left; list-style: none; line-height: 30px;">
+            <li><input type="checkbox" id="fill" class="options-op"><img src="icons/fill.svg"> fill</li>
+            <li><input type="radio" name="type" class="options-op" id="rectangle"><img src="icons/rectangle.svg"> rectangle</li>
+            <li><input type="radio" name="type" class="options-op" id="triangle"><img src="icons/triangle.svg"> triangle</li>
+            <li><input type="radio" name="type" class="options-op" id="circle"><img src="icons/oval.svg"> circle</li>
+            <li><input type="radio" name="type" class="options-op" id="line"><img src="icons/line.svg"> line</li>
+            <li><input type="radio" name="type" class="options-op" id="brush" checked><img src="icons/brush.svg"> brush</li>
+            <li><input type="radio" name="type" class="options-op" id="rubber"><img src="icons/rubber.svg"> rubber</li>
+            </ul>
+            <button id="clear">Clear</button><br>
+            <button id="save">Save</button>
+        </div>
+        <div class="canvas">
+            <canvas id="canvas"></canvas>
+        </div>
+        <script src="scripts/draw.js" defer></script>
+    </body>
+</html>
