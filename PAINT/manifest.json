@@ -6,7 +6,8 @@
     "author": "Abstergo2003",
     "action":{
         "default_popup": "popup.html",
-        "default_title": "Time on this site"
+        "default_title": "Time on this site",
+        "default_icon": "icons/icon.png"
     },
     "permissions": [
         "storage",
@@ -20,5 +21,11 @@
     "storage": ["sync", "local"],
     "background": {
         "service_worker": "install.js"
+    },
+    "icons": {
+        "16": "icons/icon.png",
+        "32": "icons/icon.png",
+        "48": "icons/icon.png",
+        "128":"icons/icon.png"
     }
 }
