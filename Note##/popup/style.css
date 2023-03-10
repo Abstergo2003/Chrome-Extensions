@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'black_crownregular';
+    src: url('assets/black-crown_regular-webfont.woff2') format('woff2'),
+         url('assets/black-crown_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body {
+    font-family: 'black_crownregular';
+    padding: 0;
+    margin: 0;
+    width: 320px;
+    height: 500px;
+    background-color: #44F;
+    color: #e5e5e5;
+    padding: 0;
+    margin: 0;
+    padding-top: 1vh;
+    float: left;
+    position: relative;
+    overflow-y: auto;
+}
+.note {
+    background-color: rgb(51, 51, 176);
+    width: 256px;
+    height: 30px;
+    margin-left: 10%;
+    margin-bottom: 5px;
+    padding: 5px;
+    transform: translateX(-10px);
+    border-radius: 5px;
+    font-size: 2vh;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    line-height: calc(1.25vw + 1.25vh);
+    white-space: nowrap;
+}
+.note p {
+    margin-top: 5px;
+}
+.note:hover {
+    background-color: rgb(41, 41, 137);
+}
+.paint {
+    width: 256px;
+    height: 256px;
+    background-color: rgb(51, 51, 176);
+    margin-left: 10%;
+    padding: 5px;
+    transform: translateX(-10px);
+    border-radius: 5px;
+    text-align: center;
+    overflow-x: hidden;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.paint:hover {
+    background-color: rgb(41, 41, 137);
+}
+.paint canvas {
+    margin-top: 15px;
+    width: 204.8px;
+    height: 204.8px;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+}
+.paint p {
+    width: fit-content;
+    max-width: 204.8px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+::-webkit-scrollbar {
+    width:10px;
+    border-radius:10px;
+    transition: all 0.3s ease-in-out;
+}
+::-webkit-scrollbar-track {
+    background:#e5e5e5;
+    border-radius:10px
+}
+::-webkit-scrollbar-thumb {
+    background:rgb(176, 138, 51);
+    border-radius:10px;
+    transition: all 0.3s ease-in-out;
+}
+::-webkit-scrollbar-thumb:hover {
+    border-radius:10px
+}
