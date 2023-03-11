@@ -33,7 +33,7 @@ html, body {
     line-height: 5vh;
     font-size: 4vh;
     text-align: center;
-    left: 6vw;
+    left: 10.5vw;
     transition: all 0.3s ease-in-out;
     z-index: 999;
 }
@@ -69,6 +69,24 @@ html, body {
     transition: all .3s ease-in-out;
 }
 #add_note_paint:hover {
+    background-color: rgb(176, 103, 51);
+}
+#delete_note {
+    font-weight: 900;
+    width: 8vw;
+    height: 5vh;
+    position: fixed;
+    top: 93vh;
+    background-color: rgb(176, 138, 51);
+    border-radius: 15px;
+    line-height: 5vh;
+    font-size: 4vh;
+    text-align: center;
+    left: 1.5vw;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+}
+#delete_note:hover {
     background-color: rgb(176, 103, 51);
 }
 .note {

@@ -1,5 +1,4 @@
 window.onload = function () {
-    load_notes()
     document.getElementById('save_note').addEventListener('click', save_note_n)
     canvas.width = canvas.offsetWidth
     canvas.height = canvas.offsetHeight
@@ -28,21 +27,19 @@ window.onload = function () {
         console.log(id)
         if (id.slice(0, 3) == "p__") {
             show_note(+id.slice(3, id.length), 'p')
-        }
-        else if (id.slice(0, 2) == "p_") {
-            console.log(+id.slice(2, id.length))
-            console.log('loading canvas')
+        } else if (id.slice(0, 2) == "p_") {
             show_note(+id.slice(2, id.length), 'p')
-       } else if(id.slice(0, 2) == "n_") {
-            console.log('loading note')
+        } else if(id.slice(0, 2) == "n_") {
             show_note(+id.slice(2, id.length), "t")
-       } else if (id == 'add_note') {
-        choose_type()
-       } else if (id == 'add_note_paint') {
-        new_note_p()
-       } else if (id == 'add_note_text') {
-        new_note_n()
-       }
+        } else if (id == 'add_note') {
+            choose_type()
+        } else if (id == 'add_note_paint') {
+            new_note_p()
+        } else if (id == 'add_note_text') {
+            new_note_n()
+        } else if (id == 'delete_note') {
+            setToDelete()
+        }
     })
 }
 function choose_type() {
