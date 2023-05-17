@@ -1,0 +1,35 @@
+{
+    "name": "Hide elements",
+    "version": "1.0.0",
+    "description": "lets u hide any element on page",
+    "manifest_version": 3,
+    "author": "Abstergo2003",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "About Extension",
+        "default_icon": "img/icon.png"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "icons": {
+        "16": "img/icon.png",
+        "32": "img/icon.png",
+        "48": "img/icon.png",
+        "128": "img/icon.png"
+    },
+    "storage": ["sync", "local"],
+    "background" : {
+        "service_worker" : "js/install.js"
+    },
+    "content_scripts": [
+        {
+          "matches": ["http://*/*", "https://*/*"],
+          "js": ["js/index.js"],
+          "run_at": "document_end"
+        }
+    ]
+}
